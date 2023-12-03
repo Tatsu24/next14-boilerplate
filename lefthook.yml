@@ -1,0 +1,10 @@
+pre-commit:
+  parallel: true
+  commands:
+    check:
+      run: pnpm check && pnpm format && git add {staged_files}
+
+commit-msg:
+  commands:
+    commitlint:
+      run: pnpm commitlint -e
