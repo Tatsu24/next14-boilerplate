@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup node and pnpm
+      - name: Setup Node.js and pnpm
         uses: ./.github/actions/setup-node-and-pnpm
       - name: Run Check Static
         run: pnpm check
@@ -14,7 +14,7 @@ jobs:
   #   runs-on: ubuntu-latest
   #   steps:
   #     - uses: actions/checkout@v4
-  #     - name: Setup node and pnpm
+  #     - name: Setup Node.js and pnpm
   #       uses: ./.github/actions/setup-node-and-pnpm
   #     - name: Run Unit Test
   #       run: pnpm test
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup node and pnpm
+      - name: Setup Node.js and pnpm
         uses: ./.github/actions/setup-node-and-pnpm
       - name: Run Build
         run: pnpm build

@@ -1,5 +1,5 @@
-name: Setup node and pnpm
-description: Setup node and pnpm Action
+name: Setup Node.js and pnpm
+description: Setup Node.js and pnpm Action
 
 runs:
   using: composite
